@@ -9,7 +9,7 @@ meson compile -C build
 meson test -C build
 ```
 
-## README
+## FAQ
 
 ### WHY?
 yes
