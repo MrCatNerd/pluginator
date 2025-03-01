@@ -2,6 +2,8 @@
 
 my custom c plugin system cuz i was bored
 
+TL;DR: it's just a libdl wrapper
+
 ```sh
 meson setup build
 meson compile -C build
