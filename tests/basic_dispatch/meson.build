@@ -1,4 +1,4 @@
-basic_dispatch_plugin = library('basic_dispatch_plugin', 'basic_plugin.c')
+basic_dispatch_plugin = library('basic_dispatch_plugin', 'plugin.c')
 basic_dispatch_test_exe = executable(
   'basic_dispatch',
   'test.c',

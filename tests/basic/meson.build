@@ -1,4 +1,4 @@
-basic_test_plugin = library('basic_test_plugin', 'basic_plugin.c')
+basic_test_plugin = library('basic_test_plugin', 'plugin.c')
 basic_test_exe = executable(
   'basic_test',
   'test.c',
