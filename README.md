@@ -1,6 +1,6 @@
 # Pluginator
 
-my custom c plugin system
+my custom c plugin system cuz i was bored
 
 ```sh
 meson setup build

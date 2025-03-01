@@ -3,10 +3,13 @@
 #include <link.h>
 #include <stdbool.h>
 
+#include "hashmap.h"
+
 typedef struct Plugin {
         const char *path;
         bool lazy;
         bool loaded;
+        struct hashmap *symbol_cache;
 
         void *dl_handle;
         struct link_map *link_map;
