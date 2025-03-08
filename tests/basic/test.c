@@ -4,6 +4,8 @@
 
 int main(void) {
     Plugin_t plugin = plugin_load(PLUGIN_PATH, true);
+    if (!plugin.loaded)
+        return MESON_FAIL;
 
     plugin_unload(&plugin);
 

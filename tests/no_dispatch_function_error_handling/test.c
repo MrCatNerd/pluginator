@@ -5,13 +5,13 @@
 
 int main(void) {
     Plugin_t plugin = plugin_load(NULL, true);
-    if (!plugin.loaded) {
-        return MESON_FAIL;
-    }
+    // don't check plugin.loaded intentionally and call a the dispatch function
+    // instead, if it errors, then the test is cooked
 
     if (plugin_dispatch_function(&plugin, "A_VERY_REAL_FUNCTION"))
         return MESON_FAIL;
 
+    // also if unloading fails, the test is also cooked
     plugin_unload(&plugin);
     return MESON_OK;
 }

@@ -7,6 +7,7 @@ basic_test_exe = executable(
 )
 
 basic_test_conf = configuration_data()
+basic_test_plugin
 basic_test_conf.set_quoted(
   'PLUGIN_PATH',
   basic_test_plugin.full_path(),
