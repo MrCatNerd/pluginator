@@ -32,7 +32,10 @@ pluginator_dep = declare_dependency(
   dependencies: deps,
 )
 
+meson.override_dependency('pluginator', pluginator_dep)
+
 # unit tests
 if not meson.is_subproject() and get_option('tests')
   subdir('tests')
 endif
+
