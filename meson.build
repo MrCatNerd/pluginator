@@ -33,6 +33,6 @@ pluginator_dep = declare_dependency(
 )
 
 # unit tests
-if not meson.is_subproject()
+if not meson.is_subproject() and get_option('tests')
   subdir('tests')
 endif
