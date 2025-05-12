@@ -15,7 +15,7 @@ src_files = ['pluginator.c']
 include_dirs = [include_directories('.')]
 deps = []
 
-hashmap_c_dep = subproject('hashmap_c').get_variable('hashmap_c_dep')
+hashmap_c_dep = dependency('hashmap.c')
 deps = [hashmap_c_dep, cc.find_library('dl')]
 
 pluginator_lib = static_library(
