@@ -2,7 +2,6 @@
 #include <link.h>
 #include <dlfcn.h>
 #include <assert.h>
-#include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
 
@@ -10,7 +9,7 @@
 #include "hashmap.h"
 
 // -------- ERROR STUFF -------- //
-static void print_dl_error() {
+static void print_dl_error(void) {
     const char *errstr = dlerror();
     if (errstr != NULL)
         fprintf(stderr, "A dynamic linking error occurred: (%s)\n", errstr);
