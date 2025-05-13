@@ -8,6 +8,7 @@
 typedef enum Pluginator_DL_flags {
     PLUGINATOR_DL_NOFLAGS = 0,
     PLUGINATOR_DL_GLOBAL = RTLD_GLOBAL,
+    PLUGINATOR_DL_LOCAL = RTLD_LOCAL,
     PLUGINATOR_DL_LAZY = RTLD_LAZY,
     PLUGINATOR_DL_NOW = RTLD_NOW,
 } Pluginator_DL_flags_e;
