@@ -8,6 +8,7 @@ TL;DR: it's just a libdl wrapper
 meson setup build
 meson compile -C build
 # (optional) tests
+meson confiure build -Dtests=true
 meson test -C build
 ```
 
